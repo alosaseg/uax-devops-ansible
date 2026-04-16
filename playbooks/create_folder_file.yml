@@ -7,14 +7,14 @@
   tasks: 
   - name: create a folder
     file: 
-      path: /home/jenkins/playbooks/test-directory
+      path: /home/jenkins/playbooks/test-directory-from-jenkins
       state: directory
       mode: 0755
       owner: jenkins
       group: jenkins
   - name: create a file into the recently created folder
     file: 
-      path: /home/jenkins/playbooks/test-directory/testfile.txt
+      path: /home/jenkins/playbooks/test-directory-from-jenkins/testfile-from-jenkins.txt
       state: touch
       mode: 0755
       owner: jenkins
